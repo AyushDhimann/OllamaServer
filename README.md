@@ -1,20 +1,23 @@
 # Ollama Server 
 
-This repository automatically install Ollama for you on linux and set-up's a publicly accessible IP that can be used further for integration into various use-cases.
+[Ollama](https://www.ollama.ai/) offers the flexibility of running renowned large language models(LLM) both locally and through its API. However, the potential of a consumer PC has its limitations.
 
-# Instructions
+In this repository, we provide a streamlined solution for effortlessly installing Ollama on a Linux web server with a single command. This enables you to access a public IP address, facilitating quicker and smoother utilization of your large language models in various applications.
 
-To install the Ollama Server on your Linux machine, copy and paste this code and enter your preferred model to install 
+
+# Installation
+
+To install the Ollama Server on your Linux machine, copy and paste this one-liner code and enter your preferred model to install 
 
 ```
 git clone https://github.com/AyushDhimann/OllamaServer/ && cd OllamaServer && chmod +x install.sh && sudo ./install.sh
 ```
 
-# How to use
+# Usage
 
-1. Get your server IP Address.
+1. Get your server IP Address and replace it accordingly in the next step.
 
-2. Either use it with cURL (replace 0.0.0.0 with your server IP Address)
+2. Either use it with cURL
 
 ```
 curl -X POST http://0.0.0.0:11434/api/generate -d '{
@@ -25,7 +28,7 @@ curl -X POST http://0.0.0.0:11434/api/generate -d '{
 
 OR
 
-use the sample python code provided in the repo [here](https://github.com/AyushDhimann/OllamaServer/blob/main/client-sample.py)
+use the sample python code provided in the repo [here](https://github.com/AyushDhimann/OllamaServer/blob/main/client-sample.py).
 
 # FAQ
 
@@ -36,4 +39,4 @@ A. Run this command ``` service ollama stop ```
 A. Run this command ``` service ollama start ```
 
 ### 3. How to install any other model in Ollama?
-A. Run this command ``` ollama pull "MODEL_NAME" ```
+A. Run this command ``` ollama pull "MODEL_NAME" ``` and then edit the model name in your request too.
