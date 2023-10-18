@@ -2,7 +2,7 @@
 
 [Ollama](https://www.ollama.ai/) offers the flexibility of running renowned large language models(LLM) both locally and through its API. However, the potential of a consumer PC has its limitations.
 
-In this repository, we provide a streamlined solution for effortlessly installing Ollama on a Linux web server with a single command. This enables you to access a public IP address, facilitating quicker and smoother utilization of your large language models in various applications.
+Here, we have provide a solution for effortlessly installing Ollama on a Linux web server with a single command with access to your servers public IP address, facilitating quicker and smoother utilization of your large language models in various applications.
 
 
 # Installation
